@@ -1,0 +1,11 @@
+<input class="add__text" type="text" [(ngModel)]="someValue" title="Add a patient's name here"/>
+<input class="add__btn" type="button" value="Add" (click)="callSomeLogic()" title="Click here to add the patients name to the list"/>
+<br>
+<table class="patients__table">
+  <th>List of Patients</th>
+    <tr *ngFor="let data of someValues">
+      <td>
+        {{data}}
+      </td>
+    </tr>
+</table>
